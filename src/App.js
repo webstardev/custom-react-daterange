@@ -6,7 +6,7 @@ import CustomDateRange from "./components/CustomDateRange";
 function App() {
   return (
     <div className="App">
-      <CustomDateRange />
+      <CustomDateRange styles={{ margin: "100px auto 0" }} />
     </div>
   );
 }
