@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <CustomDateRange
+        wrapperClass={""}
         wrapperStyles={{ margin: "100px auto 0" }}
         dateRange={dateRange}
         onChange={(newValue) => setDateReage({ ...newValue })}

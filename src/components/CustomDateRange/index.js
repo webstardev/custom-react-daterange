@@ -3,14 +3,16 @@ import { useState } from "react";
 import { Button } from "react-bootstrap";
 import DateRangePicker from "react-bootstrap-daterangepicker";
 import moment from "moment";
-
+import "./styled.scss";
 interface CustomDateRangeProps {
-  wrapperStyles: String;
+  wrapperClass: String;
+  wrapperStyles: Object;
   dateRange: { stareDate: any, endDate: any };
   onChange({ startData: any, endData: any }): void;
 }
 
 const CustomDateRange = ({
+  wrapperClass,
   wrapperStyles,
   dateRange,
   onChange,
@@ -62,7 +64,9 @@ const CustomDateRange = ({
       }}
     >
       <Button
-        className={`btn-date-range-dropdown ${dropdownOpen && "open"}`}
+        className={`btn-date-range-dropdown ${wrapperClass} ${
+          dropdownOpen && "open"
+        }`}
         style={wrapperStyles}
         variant="outline-primary"
       >
