@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-daterangepicker/daterangepicker.css";
-import "./index.scss";
+import "./index.css";
 
 import App from "./App";
 
